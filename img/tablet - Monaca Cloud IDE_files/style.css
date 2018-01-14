@@ -1,0 +1,235 @@
+/**/
+#drawer_button{
+    margin-top: 10px;
+}
+
+html{
+    height: 100%;
+}
+body{
+    font-family:"ＭＳ ゴシック",san-serif;
+    color:#330000;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+div img {
+    height:62px;
+    width:62px;
+    padding: 2px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+#header img{
+    margin-top:1%;
+}
+#category{
+    width:33.4%;
+    float:left
+}
+.category{   
+    display: block; 
+    border: 1px solid #9F99A3;
+    background-color: #f0fff0;
+    text-decoration: none;
+    color: #333;
+    width:100%;
+    text-align: center;
+    font-size: 25px;
+}
+#c0{
+    border: 2px solid #666666;
+}
+/* clearfix */
+.view:before,
+.view:after {
+    content: "";
+    display: table;
+}
+.view:after {
+    clear: both;
+}
+.view{
+    float:left;
+}
+.a{
+    overflow: hidden;
+}
+/* clearfix */
+.a:before,
+.a:after {
+    content: "";
+    display: table;
+}
+.a:after {
+    clear: both;
+}
+/*-------------------------list.html-------------------------*/
+#list{
+    float:left;
+    width:66.6%;
+    overflow: hidden;
+}
+.list{   
+    display: block;
+    border: 1px solid #9F99A3;
+    background-color: #f0fff0;
+    text-decoration: none;
+    color: #333;
+    width:100%;
+    text-align: left;
+    font-size: 25px;
+    float:left;
+}
+.list div{
+    float:left;
+}
+.Name{
+    width:35%;
+}
+.count{
+    width:35%;
+}
+.text3{
+    padding-bottom:1%;
+}.plus{
+    width:15%;
+}
+.plus img{
+    height:35px;
+    width:35px;
+}
+.minus img{
+    height:35px;
+    width:35px;
+}
+/*------------------------goods_edit-------------------------*/
+.list2{   
+    display: block;
+    border: 1px solid #ffffff;
+    background-color: #f0fff0;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 25px;
+    width: 50%;
+    float: left;
+}
+/*------------------------shop_edit-------------------------*/
+#list3{
+    float:left;
+    overflow: hidden;
+    width:100%;
+}
+.list3{   
+    display: block;
+    border: 1px solid #999999;
+    background-color: #c1ffe0;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 25px;
+    width:50%;
+    float: left;
+}
+.Name3{
+    margin: auto;
+    width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.map img{
+    height:30%;
+    width:70%;
+}
+/*------------------------tabletid_confirmation-------------------------*/
+.confirmation{
+    display: block;
+    border: 1px solid #9F99A3;
+    background-color: #f0fff0;
+    text-decoration: none;
+    color: #333;
+    width:100%;
+    height: 90%;
+    text-align: center;
+    font-size: 25px;
+}
+.text1{
+    padding-top: 20%;
+    padding-bottom:2%;
+}
+.text2{
+    font-size:50px;
+    padding-bottom:2%;
+}
+.text3{
+    padding-bottom:2%;
+}
+.text4{
+    padding-bottom:2%;
+}
+/*------------------------goods_register_and_goods_edit2-------------------------*/
+.register{
+    display: block;
+    border: 1px solid #9F99A3;
+    background-color: #f0fff0;
+    text-decoration: none;
+    color: #333;
+    width:100%;
+    height: 86.5%;
+    padding-top: 1%;
+    text-align: left;
+    font-size: 25px;
+}
+.goodsname{
+    padding-top:5%;
+}
+#Name5{
+    float:left;
+    padding-left:35%;
+    padding-right:5%;
+}
+.category5{
+    padding-top:5%;
+}
+#cate{
+    float:left;
+    padding-left:30%;
+    padding-right:20%;
+}
+.submit{
+    padding-top:5%;
+}
+#OK1{
+    padding-top:5%;
+    padding-left:59%;
+}
+#Delete{
+    float:left;
+    padding-left:46%;
+    padding-right:7%;
+}
+input[type="text"]{
+    width:22%;
+    border-radius:0;
+    border:none;
+    border-bottom:3px solid #999999;
+    background-color:#f0fff0;
+    font-size:24px;
+}
+select{
+    font-size:18px;
+}
+input[type="button"]{
+    border:none;
+    background:none;
+    border-radius:0;
+    font-size:24px;
+}

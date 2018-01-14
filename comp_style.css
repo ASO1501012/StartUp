@@ -1,0 +1,71 @@
+html{
+    background-color:#ffffff;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro',
+     'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+body {
+  margin: 0 auto;
+  height:auto;
+  background-color:#F7EDDB;
+}
+article{
+    width:1280px;
+    margin:0 auto;
+    height: 600px;
+    background-image: url(./img/niku-kyu-gray.png);
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center center;
+
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size:contain;
+
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    //background-color: white;
+
+}
+#logo{
+    margin-top:14px;
+}
+header {
+	border-style: hidden;
+	background-color: #634A47;
+	width:100%;
+    min-width:1280px;
+	height: 60px;
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+    width:1280px;
+	margin: 0 auto;
+	height: 70px;
+}
+.title {
+    font-size: 18px;
+    line-height: 47px;
+    padding-left: 20px;
+    color: #FFFFFF;
+    background-color: #6B8E23;
+    text-align: center;
+    /*background: linear-gradient(-45deg,rgba(255, 91, 82, .8),rgba(255, 255, 97, .8), rgba(255, 42, 44, .8));*/
+}
+.button{
+    background: #6B8E23;
+    color:#FFFFFF;
+    width:200px;
+    height:40px;
+    border:hidden;
+    font-weight: bolder;
+    font-size:15px;
+    border-radius: 3px;
+    margin:0 auto;
+    margin-top:530px;
+    margin-left:720px;
+    margin-buttom:50px;
+}

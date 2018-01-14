@@ -1,0 +1,205 @@
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="./userpage2_style.css">
+    <script type="text/javascript" src="./js/jquery-3.1.1.min.js"></script>
+    <title>ホスト詳細</title>
+</head>
+    <script>
+        $(function(){
+            $('.more').each(function(){
+                var $ele = $(this);
+                $ele.prepend('<div class="open"><a href="#">続きを読む</a></div>');
+                $ele.append('<div class="close"><a href="#">閉じる</a></div>');
+                $ele.find('.open').nextAll().hide();
+                $ele.find('.open').click(function(){
+                    $ele.find('.open').hide();
+                    $ele.find('.open').nextAll().slideDown();
+                    return false;
+                });
+                $ele.find('.close').click(function(){
+                    $ele.find('.open').nextAll().slideUp('slow', function() {
+                        $ele.find('.open').show();
+                    });
+                    return false;
+                });
+            });
+        });
+        (function($) {
+            $(function(){
+                var _imgNum = 0;    //画像の枚数
+                var _imgSize = 0;   //画像のサイズ
+                var _current = 0;   //現在の画像
+                var _timer = 3000;  //タイマー時間
+
+                //各ボタンの配置 横の部分
+                $('#container').append('<div id="pagenation"><ul></ul></div>');
+
+                //画像サイズ取得
+                _imgSize = $('#banner ul li').width();
+
+                //メイン画像の数だけ繰り返す
+                $('#banner ul li').each(function(){
+                    //画像をずらして外に配置
+                    $(this).css('margin-left', -_imgSize);
+                    //画像の数だけページネーションボタンを作成
+                    if (_imgNum == _current) {
+                        //currentだったらアクティブ、メインの画像は表示
+                        $('#pagenation ul').append('<li class="active"><a href="#"><img src="img/pagenation.gif" width="12" height="24" /></a></li>');
+                        $(this).css('margin-left', '0px');
+                    } else {
+                        $('#pagenation ul').append('<li><a href="#"><img src="img/pagenation.gif" width="12" height="24" /></a></li>');
+                    }
+                    //ループの数をカウントして_imgNumに入れる
+                    _imgNum++;
+                });
+
+                //一定時間ごとにimageMoveを実行
+                var loopSwitch = setInterval(loop, _timer);
+                function loop() {
+                    imageMove(_current +1);
+                }
+
+                //ボタンをクリック
+                $('#btn-next').click(function(e){
+                    e.preventDefault();
+                    imageMove(_current +1);
+                });
+                $('#btn-prev').click(function(e){
+                    e.preventDefault();
+                    imageMove(_current -1);
+                });
+                //ページネーションクリック
+                $('#pagenation ul li').click(function(e) {
+                    e.preventDefault();
+                    var thisNum = $('#pagenation li').index(this);
+                    //押したボタンが現在の画像じゃなかったら実行
+                    if(thisNum  != _current) {
+                        imageMove(thisNum );
+                    }
+                });
+
+                function imageMove(next) {
+                    //ループ時間リセット
+                    clearInterval(loopSwitch);
+                    loopSwitch = setInterval(loop, _timer);
+                    //次の画像が次の画像より多きかったら右に配置（小さかったら左）
+                    var pos;
+                    if (_current < next) {
+                        pos = -_imgSize;
+                    } else {
+                        pos = _imgSize;
+                    }
+
+                    //次の画像が最後なら1枚目、１枚目なら最後
+                    if (next == _imgNum) {
+                        next = 0;
+                    } else if(next == -1) {
+                        next = (_imgNum-1);
+                    }
+
+                    //次の画像を動かす
+                    $("#banner li").eq(next)
+                    //次の画像を次の位置に配置
+                        .css("margin-left", pos)
+                        .animate({
+                        marginLeft: "0"
+                    },"fast");
+
+                    //現在の画像を動かす
+                    $("#banner li").eq(_current)
+                        .animate({
+                        marginLeft: -pos
+                    },"fast");
+
+                    //ページネーション現在のを消し次のをアクティブに
+                    $('#pagenation li').eq(_current).removeClass('active');
+                    $('#pagenation li').eq(next).addClass('active');
+
+                    //現在の番号を次の番号にする。
+                    _current = next;
+                }
+            });
+        })(jQuery);
+        function look(image)
+        {
+            document.war.src=image;
+        }
+    </script>
+
+<body>
+    <header>
+        <div id="header">
+            <img id="logo" src="./img/log2.png" style="width:25%; height:50%;"> 福岡の犬愛好家のためのお預けお預かりサービス
+        </div>
+    </header>
+    <article>
+        <div>
+
+                <div id="container">
+                    <div id="banner" >
+                        <ul >
+                            <li><img src="img/takamatsuhouse.jpg" width="1200" height="400" /></li>
+                            <li><img src="img/takamatsu2.png" width="1200" height="400" /></li>
+                            <li><img src="img/takamatsuhouse.jpg" width="1200" height="400" /></li>
+                            <li><img src="img/takamatsu2.png" width="1200" height="400"/></li>
+                        </ul>
+                    </div>
+                </div>
+
+            <div class="item--dog-size">
+                <p style="font-size: 18pt">お世話可能な犬のサイズ</p>
+                <div class="size-item">
+                    <img src="./img/check-mark.png" style="padding-left:10px;padding-top:30px;position: relative;">
+                    <label for="search-area__size-small" class="c-checkbox__label">
+                        <p class="check2" style="position: absolute;margin-top:-35px;">小型犬</p>
+                        <p class="check" style="position: absolute;margin-top:-1px;">〜15kg</p>
+                    </label>
+                </div>
+                <div class="size-item2">
+
+                    <label for="search-area__size-middle" class="c-checkbox__label">
+                        <p class="check2">中型犬</p>
+                        <p class="check">〜24kg</p>
+                    </label>
+                </div>
+                <div class="size-item2">
+
+                    <label for="search-area__size-big" class="c-checkbox__label">
+                        <p class="check2">大型犬</p>
+                        <p class="check">〜39kg</p>
+                    </label>
+                </div>
+                <div class="size-item2">
+                    <label for="search-area__size-super-big" class="c-checkbox__label">
+                        <p class="check2">超大型犬</p>
+                        <p class="check">〜40kg</p>
+                    </label>
+                </div>
+            </div>
+            <div class="message">
+                <p>
+                    コーギーを15年近く飼っていました。最後の2年は介護と看護の日々でしたのでシニアのわんちゃん
+                    も対応可能です。<br>また、現在は介護と動物看護の勉強をしています。子犬の頃はしつけ教室で学んだ
+                    ので毅然とワンちゃんと向い合えます。何よりワンちゃんが大好き。<br>
+                </p>
+                <div class="more">
+                    <p>
+                        飼い主さんの安心と、ワンちゃ
+                        んの安全に心がけます。家族は主人と大学院生の息子です。
+
+                        よろしくお願いします(^_^)
+                    </p>
+                </div>
+            </div>
+            <div style="width:1200px;margin:0 auto;">
+                <button type="button">質問</button>
+                <button type="button" onclick="location.href='./comp.html'">お預け申請</button>
+            </div>
+        </div>
+    </article>
+</body>
+
+</html>

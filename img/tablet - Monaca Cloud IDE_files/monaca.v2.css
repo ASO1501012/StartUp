@@ -1,0 +1,283 @@
+div.m-page-settings > * {
+  color: #333; }
+
+div.m-page-settings h1 {
+  padding: 32px 16px 32px 16px;
+  font-size: 18px;
+  font-weight: 600; }
+
+div.m-page-settings h2 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 24px; }
+
+div.m-page-settings header,
+div.m-page-settings section {
+  padding-bottom: 32px; }
+
+div.m-page-settings > header > section,
+div.m-page-settings > main > section {
+  width: auto;
+  margin: 0 16px; }
+
+div.m-page-settings > main > section.bottom-border {
+  margin-bottom: 32px;
+  border-bottom: 1px solid #ccc; }
+
+div.m-page-settings > header {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px; }
+  div.m-page-settings > header.m-header-caret:after, div.m-page-settings > header.m-header-caret:before {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  div.m-page-settings > header.m-header-caret:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-top-color: #fff;
+    border-width: 15px;
+    margin-left: -15px; }
+  div.m-page-settings > header.m-header-caret:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-top-color: #ccc;
+    border-width: 16px;
+    margin-left: -16px; }
+
+div.backend-service > header > div > div.m-container {
+  margin-left: 16px; }
+
+div.backend-service > main div.m-container .deploy-service-left {
+  width: 120px; }
+
+div.backend-service > main div.m-container .deploy-service-middle {
+  width: 500px; }
+
+div.backend-service > main div.m-container .deploy-service-right {
+  width: 210px; }
+
+div.backend-service > header > div > div.ci-depleted-notice {
+  padding: 16px;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 832px; }
+  div.backend-service > header > div > div.ci-depleted-notice > p {
+    margin-bottom: 16px;
+    font-size: 12px; }
+    div.backend-service > header > div > div.ci-depleted-notice > p > img {
+      width: 30px; }
+    div.backend-service > header > div > div.ci-depleted-notice > p > span {
+      margin-left: 16px; }
+
+div.backend-service > main > section .ci-configure-deployservice-btn-container {
+  margin-top: 16px;
+  margin-bottom: 32px; }
+
+div.backend-service > main > section.ci-config-json > div.ci-config-json-info {
+  margin-bottom: 16px; }
+
+div.backend-service > main > section.ci-config-json textarea {
+  width: 80%;
+  height: 400px; }
+
+div.backend-service > main > section.ci-config-json button.ci-config-json-save {
+  margin-top: 16px; }
+
+div.backend-service > main > section.ci-config-json > div.ci-config-json-controls {
+  margin-top: 16px; }
+  div.backend-service > main > section.ci-config-json > div.ci-config-json-controls > div {
+    display: inline-block;
+    width: 408px;
+    margin-left: 16px;
+    min-height: 60px;
+    vertical-align: top; }
+    div.backend-service > main > section.ci-config-json > div.ci-config-json-controls > div:first-child {
+      margin-left: 0; }
+      div.backend-service > main > section.ci-config-json > div.ci-config-json-controls > div:first-child > div {
+        display: inline-block;
+        width: 200px;
+        text-align: right; }
+        div.backend-service > main > section.ci-config-json > div.ci-config-json-controls > div:first-child > div > img {
+          vertical-align: top; }
+        div.backend-service > main > section.ci-config-json > div.ci-config-json-controls > div:first-child > div:first-child {
+          text-align: left; }
+
+div.backend-service > main > section.error-container {
+  text-align: center;
+  padding: 16px;
+  border: 1px solid #ccc;
+  width: auto;
+  margin: 0 16px; }
+  div.backend-service > main > section.error-container > div.error-message-container {
+    min-height: 51px;
+    margin: 10px; }
+    div.backend-service > main > section.error-container > div.error-message-container > div.error-icon {
+      display: inline-block; }
+    div.backend-service > main > section.error-container > div.error-message-container > div.error-message {
+      padding-left: 16px;
+      display: inline-block;
+      vertical-align: middle; }
+
+.ci-alert-dialog section.modal-body {
+  display: table; }
+  .ci-alert-dialog section.modal-body > div {
+    display: table-row; }
+    .ci-alert-dialog section.modal-body > div > div {
+      display: table-cell;
+      vertical-align: top; }
+      .ci-alert-dialog section.modal-body > div > div:first-child {
+        padding: 0 24px 0 32px; }
+      .ci-alert-dialog section.modal-body > div > div > h2 {
+        font-weight: 400;
+        font-size: 1.38rem;
+        padding-bottom: 10px; }
+      .ci-alert-dialog section.modal-body > div > div > p {
+        margin-bottom: 20px;
+        font-size: 12px; }
+      .ci-alert-dialog section.modal-body > div > div > ul {
+        margin-left: 15px;
+        list-style-image: url(/img/debugger/ios/ico-list-circle-8.png); }
+        .ci-alert-dialog section.modal-body > div > div > ul > li {
+          list-style: inherit;
+          margin-bottom: 6px;
+          color: #900;
+          font-weight: 600; }
+
+div.deploy-service > header > div {
+  width: 100%; }
+  div.deploy-service > header > div > p {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 14px; }
+  div.deploy-service > header > div > div {
+    width: 100%;
+    text-align: center; }
+    div.deploy-service > header > div > div button.add-deploy-service span {
+      display: inline-block; }
+    div.deploy-service > header > div > div.deploy-service-list-available {
+      margin-bottom: 16px; }
+      div.deploy-service > header > div > div.deploy-service-list-available > div {
+        display: inline-block;
+        margin-left: 40px; }
+        div.deploy-service > header > div > div.deploy-service-list-available > div:first-child {
+          margin-left: 0; }
+
+div.deploy-service > main > section > div.deploy-service-missing-own {
+  text-align: center;
+  font-size: 12px;
+  color: #ccc; }
+
+div.deploy-service > main > section > div.deploy-service-has-own {
+  display: table;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+  font-size: 12px; }
+  div.deploy-service > main > section > div.deploy-service-has-own > div {
+    display: table-row;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-right: 3px solid #8bcc37; }
+    div.deploy-service > main > section > div.deploy-service-has-own > div > div {
+      display: table-cell;
+      padding: 8px 16px;
+      vertical-align: middle;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc; }
+      div.deploy-service > main > section > div.deploy-service-has-own > div > div.deploy-service-table-col1 {
+        width: 20%;
+        border-left: 3px solid #8bcc37; }
+      div.deploy-service > main > section > div.deploy-service-has-own > div > div.deploy-service-table-col2 {
+        width: 30%; }
+        div.deploy-service > main > section > div.deploy-service-has-own > div > div.deploy-service-table-col2 > div:first-child {
+          font-weight: 600; }
+      div.deploy-service > main > section > div.deploy-service-has-own > div > div.deploy-service-table-col3 {
+        width: 40%; }
+      div.deploy-service > main > section > div.deploy-service-has-own > div > div.deploy-service-table-col4 {
+        width: 10%;
+        border-right: 1px solid #ccc;
+        text-align: right; }
+
+.deploy-service-add-dialog section.modal-body > div.select-deploy-service {
+  display: table;
+  width: 100%; }
+  .deploy-service-add-dialog section.modal-body > div.select-deploy-service > div {
+    display: table-row; }
+    .deploy-service-add-dialog section.modal-body > div.select-deploy-service > div > div {
+      display: table-cell;
+      padding: 4px; }
+      .deploy-service-add-dialog section.modal-body > div.select-deploy-service > div > div.select-deploy-service-label {
+        width: 40%; }
+      .deploy-service-add-dialog section.modal-body > div.select-deploy-service > div > div.select-deploy-service-select {
+        width: 80%; }
+        .deploy-service-add-dialog section.modal-body > div.select-deploy-service > div > div.select-deploy-service-select > div.m-component-combobox {
+          width: 100%; }
+
+.deploy-service-add-dialog section.modal-body > div.deploy-service-type-form {
+  width: 100%; }
+  .deploy-service-add-dialog section.modal-body > div.deploy-service-type-form > h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 32px;
+    margin-bottom: 24px; }
+  .deploy-service-add-dialog section.modal-body > div.deploy-service-type-form > form {
+    display: table;
+    width: 100%; }
+    .deploy-service-add-dialog section.modal-body > div.deploy-service-type-form > form > div {
+      display: table-row; }
+      .deploy-service-add-dialog section.modal-body > div.deploy-service-type-form > form > div > div {
+        display: table-cell;
+        padding: 4px; }
+        .deploy-service-add-dialog section.modal-body > div.deploy-service-type-form > form > div > div.deploy-service-type-form-label {
+          width: 40%; }
+        .deploy-service-add-dialog section.modal-body > div.deploy-service-type-form > form > div > div.deploy-service-type-form-value {
+          width: 80%; }
+          .deploy-service-add-dialog section.modal-body > div.deploy-service-type-form > form > div > div.deploy-service-type-form-value > input[type="text"] {
+            width: 100%; }
+
+.ci-history > section {
+  padding: 16px; }
+
+.ci-history .m-list-status.m-list-status-icon {
+  margin: 0 auto 30px; }
+  .ci-history .m-list-status.m-list-status-icon li {
+    display: flex;
+    flex-direction: row; }
+    .ci-history .m-list-status.m-list-status-icon li h2 {
+      margin-top: 0;
+      width: 250px; }
+    .ci-history .m-list-status.m-list-status-icon li .timestamp {
+      width: 200px; }
+    .ci-history .m-list-status.m-list-status-icon li .log-action-control {
+      align-self: center;
+      text-align: right;
+      width: calc(100% - (250px + 200px)); }
+    .ci-history .m-list-status.m-list-status-icon li .ellapsed {
+      background: url(/img/build/icon_time.png) no-repeat left center;
+      color: #666;
+      font-size: 0.93rem;
+      line-height: 19px;
+      height: 19px;
+      padding-left: 20px; }
+    .ci-history .m-list-status.m-list-status-icon li .createdate {
+      background: url(/img/build/icon_day.png) no-repeat left center;
+      color: #666;
+      font-size: 0.93rem;
+      line-height: 19px;
+      height: 19px;
+      padding-left: 20px; }
+    .ci-history .m-list-status.m-list-status-icon li .building, .ci-history .m-list-status.m-list-status-icon li .waiting {
+      color: #666;
+      font-size: 0.93rem;
+      padding-left: 20px; }
+
+.ci-history .history-action-control {
+  text-align: center; }

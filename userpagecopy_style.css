@@ -1,0 +1,147 @@
+html{
+    background-color:#ffffff;
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro',
+     'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+body {
+  margin: 0;
+  height:auto;
+  background-color:#F7EDDB;
+}
+article{
+    width:1280px;
+    margin:0 auto;
+}
+#logo{
+    margin-top:14px;
+}
+header {
+	border-style: hidden;
+	background-color: #634A47;
+	width:100%;
+    min-width:1280px;
+	height: 60px;
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+    width:1280px;
+	margin: 0 auto;
+	height: 70px;
+}
+
+.userphoto{
+    width:1200px;
+    height:400px;
+    margin: 0 auto;
+    background-color: #ff0000
+}
+.message{
+    background-color:#f5f5f5;
+    width:660px;
+    margin-left: 300px;
+    padding:3px 10px;
+    margin-bottom: 20px;
+
+}
+button{
+    background: #6B9076;
+    color:#FFFFFF;
+    width:200px;
+    height:40px;
+    margin-top:20px;
+    border:hidden;
+    margin-left:270px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+    font-size:15px;
+    border-radius: 3px;
+}
+.item--dog-size{
+    margin-left: 280px;
+    height: 240px;
+}
+.size-item{
+    width: 150px;
+    height: 100px;
+    border: 1;
+    border:2px solid tomato;
+    background-color:white;
+    float: left;
+    margin-left: 20px;
+}
+.size-item2{
+    width: 150px;
+    height: 100px;
+    border:2px solid grey;
+    background-color:rgba(128, 128, 128, .8);
+    float: left;
+    margin-left: 20px;
+}
+.c-checkbox__input{
+    border:1px solid red;
+}
+
+.check{
+    padding-left:55px;
+
+}
+.check2{
+    padding-left:55px;
+}
+#container {
+
+    margin: 50px auto;
+}
+#banner {
+
+    margin-bottom: 5px;
+}
+#banner ul {
+    list-style: none;
+    position: relative;
+    margin-left: 0px;
+    overflow: hidden;
+    width:1200px;
+    height: 400px;
+}
+#banner ul li {
+    float: left;
+    width: 1300px;
+    position: absolute;
+}
+div#pagenation {
+    position: relative;
+    overflow: hidden;
+    top: -30px;
+}
+
+div#pagenation ul {
+    position:relative;
+    left:50%;
+    float:left;
+    list-style: none;
+}
+div#pagenation li {
+    position:relative;
+    left:-50%;
+    float:left;
+    margin: 0 2px;
+
+}
+div#pagenation li a {
+    width:10px;
+    height:12px;
+    overflow:hidden;
+    display:block;
+    background-image:url(img/aa3-3.png);
+    background-position:0 0;
+}
+div#pagenation li.active a,
+div#pagenation li a:hover {
+    background-position:0 12px;
+}
+div#pagenation li a img {
+    visibility:hidden;
+    display: none;
+}

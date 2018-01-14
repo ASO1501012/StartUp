@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>Qiita:Team / esa / DocBase の比較</title>
+        <style>
+            #legend {
+                padding: 10px;
+                overflow: hidden;
+                position: relative;
+            }
+            ul.pie-legend {
+                list-style: none outside none;
+                float: left;
+                margin: 0 0 0 0;
+                padding: 0;
+                position: relative;
+                left: 50%;
+            }
+            ul.pie-legend > li {
+                float: left;
+                margin-right: 5px;
+                padding: 5px;
+                position: relative;
+                left: -50%;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+        <script language="JavaScript"><!--
+                function displayPieChart() {
+                var data = {
+                    labels: ["デザイン", "フィードバック", "フロー", "ストック", "大規模利用", "コスト"],
+                    datasets: [
+                        {
+                            label: "Qiita:Team",
+                            fillColor: "rgba(200,0,0,0.2)",
+                            strokeColor: "green",
+                            pointColor: "green",
+                            pointStrokeColor: "green",
+                            pointHighlightFill: "green",
+                            pointHighlightStroke: "green",
+                            data: [4, 3, 5, 2, 4, 3]
+                        },
+                        {
+                            label: "esa",
+                            fillColor: "rgba(200,0,0,0.2)",
+                            strokeColor: "red",
+                            pointColor: "red",
+                            pointStrokeColor: "red",
+                            pointHighlightFill: "red",
+                            pointHighlightStroke: "red",
+                            data: [5, 5, 2, 5, 3, 3]
+                        },
+                        {
+                            label: "DocBase",
+                            fillColor: "rgba(200,0,0,0.2)",
+                            strokeColor: "yellow",
+                            pointColor: "yellow",
+                            pointStrokeColor: "yellow",
+                            pointHighlightFill: "yellow",
+                            pointHighlightStroke: "yellow",
+                            data: [3, 4, 2, 5, 5, 3]
+                        }
+                    ]
+                };
+                var ctx = document.getElementById("radarChart").getContext("2d");
+                var options = { 
+                    legendTemplate : "<% for (var i=0; i<datasets.length; i++){%><span style=\"background-color:<%=datasets[i].strokeColor%>\">&nbsp;&nbsp;&nbsp;</span>&nbsp;<%if(datasets[i].label){%><%=datasets[i].label%><%}%><br><%}%>"
+                };
+                var radarChart = new Chart(ctx).Radar(data, options);
+                document.getElementById("legend").innerHTML = radarChart.generateLegend();
+            }
+                --></script>
+            </head>
+                    <body onload="displayPieChart();">
+                        <div class="box">
+                            <canvas id="radarChart" height="450" width="450"></canvas>
+                                <div id="legend"></div>
+            </div>
+            </body>
+            </html>

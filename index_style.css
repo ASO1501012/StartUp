@@ -1,0 +1,76 @@
+html{
+    font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro',
+     'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+body {
+  margin:0;
+  height:auto;
+  background-color:#F7EDDB;
+}
+article{
+    width:1280px;
+    margin:0 auto;
+}
+
+#logo{
+    margin-top:14px;
+}
+header {
+	border-style: hidden;
+	background-color: #634A47;
+	width:100%;
+    min-width:1280px;
+	height: 120px;
+	margin: 0px;
+	padding: 0px;
+}
+#header{
+    width:1280px;
+	margin: 0 auto;
+	height: 70px;
+}
+#header>div{
+    margin-top:8px;
+}
+.hbutton{
+    border-width:1px;
+    border-color:#556B2F;
+    background-color: #6B8E23;
+    width:315px;
+    height:50px;
+    margin:0;
+    color:#DEC7C7;
+    //display:inline;
+    //vertical-align: middle;
+}
+.main1{
+    text-align: center;
+    margin-top:15px;
+}
+p{
+    margin:0;
+    margin-top:10px;
+    font-size:20px;
+}
+select{
+    width:600px;
+    height:60px;
+}
+#submit{
+    height:60px;
+    width:60px;
+    border-color:#B38F71;
+    background-color:#6B8E23;
+}
+select , #submit{
+    vertical-align: middle;
+}
+.search{
+    width:660px;
+    margin:0 auto;
+    font-size:20px;
+    margin-bottom: 50px;
+}
+.hbutton:hover {
+	letter-spacing: 5px;
+}
